@@ -3,7 +3,7 @@ import {
   addProgram,
   deleteProgram,
   updateProgram
-} from "../services/programsService.js";
+} from "programsService.js";
 
 
 let editId = null;
