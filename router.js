@@ -1,6 +1,6 @@
-import { UsersPage, initUsersPage } from "./users.js";
-import { DashboardPage } from "./dashboard.js";
-import { ProgramsPage  , initProgramsPage} from "./programs.js";
+import { UsersPage, initUsersPage } from "./pages/users.js";
+import { DashboardPage } from "./pages/dashboard.js";
+import { ProgramsPage  , initProgramsPage} from "./pages/programs.js";
 
 const routes = {
   dashboard: DashboardPage,
