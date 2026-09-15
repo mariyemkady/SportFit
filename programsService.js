@@ -1,4 +1,4 @@
-import { getPrograms, savePrograms } from "../js/storage.js";
+import { getPrograms, savePrograms } from "storage.js";
 
 
 // ➕ ADD
