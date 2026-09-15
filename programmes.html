@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SportFit Hub</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/programmes.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+  <nav class="navbar">
+
+  <h1 class="logo">SportFit</h1>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="programmes.html">Programmes</a></li>
+    <li><a href="nutrition.html">Nutrition</a></li>
+    <li><a href="favorites.html"> Fav❤️rites</a></li>
+     <li><a href="about.html">About</a></li>
+     <li><a href="contact.html">Contact</a></li>
+     <li><a href="register.html">Register</a></li>
+  </ul>
+
+  <div class="menu-toggle">
+    ☰
+  </div>
+  <button id="themeBtn">
+  🌙
+</button>
+
+</nav>
+  </header>
+
+  <section class="programmes-hero">
+
+    <div class="hero-content">
+
+        <h1>Our Fitness Programs</h1>
+
+        <p>
+            Discover professional training programs
+            designed to help you achieve your goals.
+        </p>
+
+    </div>
+
+</section>
+
+<div class="controls">
+
+  <input 
+    type="text" 
+    id="search" 
+    placeholder="Search programmes..."
+  />
+
+  <div class="filters">
+    <button class="filter-btn" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="musculation">Musculation</button>
+    <button class="filter-btn" data-filter="cardio">Cardio</button>
+    <button class="filter-btn" data-filter="yoga">Yoga</button>
+    <button class="filter-btn" data-filter="weight loss">Weight Loss</button>
+  </div>
+
+</div>
+<section class="programmes">
+
+    <h2>Choose Your Program</h2>
+
+    <div id="programmesContainer">
+
+    </div>
+
+</section>
+<script src="js/programmes.js"></script>
+<script src="js/theme.js"></script>
+
+<footer>
+
+    <h2>SportFit</h2>
+
+    <p>Train Hard. Eat Smart.</p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+        <a href="programmes.html">Programs</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 SportFit. All Rights Reserved.
+    </p>
+
+</footer>
+</body>
+</html>

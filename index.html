@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SportFit Hub</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+  <nav class="navbar">
+
+  <h1 class="logo">SportFit</h1>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="programmes.html">Programmes</a></li>
+    <li><a href="nutrition.html">Nutrition</a></li>
+    <li><a href="favorites.html"> Fav❤️rites</a></li>
+     <li><a href="about.html">About</a></li>
+     <li><a href="contact.html">Contact</a></li>
+      <li><a href="register.html">Register</a></li>
+  </ul>
+
+  <div class="menu-toggle">
+    ☰
+  </div>
+  <button id="themeBtn">
+  🌙
+</button>
+
+</nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <div class="hero-text">
+      <h2>Transform Your Body</h2>
+
+      <p>
+        Start your fitness journey today with powerful workouts
+        and healthy nutrition plans.
+      </p>
+
+      
+    </div>
+
+  </section>
+<!-- PROGRAMMES -->
+
+<section class="programmes">
+
+  <h2 class="section-title">
+    Training Programs
+  </h2>
+<div class="search-box">
+
+  <input
+  type="text"
+  id="searchInput"
+  placeholder="Search program...">
+
+</div>
+  <div class="cards">
+
+</div>
+
+</section>
+
+<!-- BMI CALCULATOR -->
+
+<section class="bmi-section">
+
+  <h2 class="section-title">
+    BMI Calculator
+  </h2>
+
+  <div class="bmi-box">
+
+    <input
+    type="number"
+    id="weight"
+    placeholder="Weight (kg)">
+
+    <input
+    type="number"
+    id="height"
+    placeholder="Height (m)">
+
+    <button id="bmiBtn">
+      Calculate
+    </button>
+
+    <h3 id="result">
+      Your BMI: 0
+    </h3>
+
+  </div>
+
+</section>
+
+
+ <section class="calories-section">
+
+  <h2 class="section-title">Calories Calculator</h2>
+
+  <div class="calories-box">
+
+    <input type="number" id="age" placeholder="Age">
+    <input type="number" id="calWeight" placeholder="Weight (kg)">
+    <input type="number" id="calHeight" placeholder="Height (cm)">
+
+    <select id="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <select id="activity">
+      <option value="1.2">Sedentary</option>
+      <option value="1.375">Light</option>
+      <option value="1.55">Moderate</option>
+      <option value="1.725">Hard</option>
+    </select>
+
+    <select id="goal">
+      <option value="maintain">Maintain</option>
+      <option value="lose">Lose fat</option>
+      <option value="gain">Gain muscle</option>
+    </select>
+
+    <button id="caloriesBtn">Calculate Calories</button>
+
+    <h3 id="caloriesResult">Daily Calories: 0 kcal</h3>
+
+  </div>
+
+</section>
+
+
+
+  <script src="js/app.js"></script>
+  <script src="js/theme.js"></script>
+  
+
+<footer>
+
+    <h2>SportFit</h2>
+
+    <p>Train Hard. Eat Smart.</p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+        <a href="programmes.html">Programs</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 SportFit. All Rights Reserved.
+    </p>
+
+</footer>
+</body>
+</html>
