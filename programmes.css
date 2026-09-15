@@ -1,0 +1,252 @@
+/* HERO SECTION */
+
+.programmes-hero{
+    height:70vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1517838277536-f5f99be501cd");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    max-width:600px;
+    margin:auto;
+}
+
+
+/* SEARCH + FILTERS */
+
+.controls{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+
+    padding:40px 20px;
+}
+
+#search{
+    width:70%;
+    max-width:600px;
+
+    padding:15px 20px;
+
+    border:none;
+    border-radius:50px;
+
+    font-size:16px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+    outline:none;
+}
+
+
+.filters{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.filter-btn{
+    padding:10px 20px;
+
+    border:none;
+    border-radius:30px;
+
+   background:var(--bg-color);
+
+  color:var(--text-color);
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.filter-btn:hover{
+    background:var(--bg-color);
+
+  color:var(--text-color);
+
+    transform:translateY(-3px);
+}
+
+
+/* PROGRAMMES SECTION */
+
+.programmes{
+    padding:80px 10%;
+     background:var(--bg-color);
+
+  color:var(--text-color);
+}
+
+.programmes h2{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+
+/* GRID */
+
+#programmesContainer{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+}
+
+
+/* CARD */
+
+.programme-card{
+    background:var(--bg-color);
+
+  color:var(--text-color);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:all .4s ease;
+}
+
+.programme-card:hover{
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 40px rgba(44, 80, 100, 0.15);
+}
+
+.programme-card img{
+    width:100%;
+    height:250px;
+
+    object-fit:cover;
+
+    transition:.4s;
+}
+
+.programme-card:hover img{
+    transform:scale(1.05);
+}
+
+
+/* CONTENT */
+
+.programme-content{
+    padding:25px;
+}
+
+.programme-content h3{
+    font-size:1.5rem;
+    margin-bottom:10px;
+}
+
+.programme-content p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+
+/* BUTTONS */
+
+.details-btn{
+    display:block;
+
+    text-align:center;
+    text-decoration:none;
+
+    padding:12px;
+
+    margin-bottom:10px;
+
+    border-radius:12px;
+
+     background: bisque;
+
+     color: rgb(81, 120, 172);
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.details-btn:hover{
+    transform:translateY(-2px);
+}
+
+.fav-btn{
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:12px;
+
+     background: bisque;
+
+  color: rgb(81, 120, 172);
+
+    cursor:pointer;
+
+    font-size:16px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.fav-btn:hover{
+    transform:translateY(-2px);
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:2.5rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    #search{
+        width:90%;
+    }
+
+    .programmes{
+        padding:60px 5%;
+    }
+
+}
+

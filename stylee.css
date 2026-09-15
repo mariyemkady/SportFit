@@ -1,0 +1,430 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px;
+  margin: 6px 0;
+  color: rgb(14, 13, 13);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  background: #b18888;
+}
+
+.sidebar a.active {
+  color: red;
+  font-weight: bold;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  background: #fdfbfb;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin: 0;
+  color: #333;
+}
+
+.card p {
+  font-size: 24px;
+  margin-top: 10px;
+}
+.stats{
+  display:flex;
+  gap:20px;
+  margin-top:20px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  min-width:200px;
+  box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+.card p{
+  font-size:30px;
+  font-weight:bold;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+}
+
+th,td{
+  border:1px solid #ddd;
+  padding:12px;
+}
+
+.delete-btn{
+  padding:8px 12px;
+  cursor:pointer;
+}
+/* ================= GENERAL ================= */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+/* ================= TITLE ================= */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ================= FORM ================= */
+form {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.2s;
+}
+
+form input:focus {
+  border-color: #4a90e2;
+}
+
+/* ================= BUTTON ================= */
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #357ab8;
+}
+
+/* ================= TABLE ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+thead {
+  background: #4a90e2;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+/* ================= ACTION BUTTONS ================= */
+.delete-btn {
+  background: #e74c3c;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+
+  form input {
+    width: 100%;
+  }
+}
+/* ================= USERS PAGE ================= */
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+
+/* FORM */
+
+#userForm {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+
+#userForm input,
+#searchInput {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+
+#userForm input:focus,
+#searchInput:focus {
+  border-color: #2563eb;
+}
+
+
+/* ADD BUTTON */
+
+#submitBtn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+
+#submitBtn:hover {
+  opacity: 0.8;
+}
+
+
+
+/* SEARCH */
+
+#searchInput {
+  width: 300px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+
+/* TABLE */
+
+#usersTable {
+  background: white;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+
+table tr:hover {
+  background: #f5f5f5;
+}
+
+
+
+/* EDIT BUTTON */
+
+.edit-btn {
+  background: #f59e0b;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+
+.edit-btn:hover {
+  opacity: 0.8;
+}
+
+
+
+/* DELETE BUTTON */
+
+.delete-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.delete-btn:hover {
+  opacity: 0.8;
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+  #userForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+
+  #searchInput {
+    width: 100%;
+  }
+
+}
+
+/* ================= DASHBOARD ================= */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+    margin-top:25px;
+}
+
+.card{
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    background:#fff;
+    padding:22px;
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card-icon{
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:32px;
+    color:white;
+}
+
+.users-card .card-icon{
+    background:#2563eb;
+}
+
+.programs-card .card-icon{
+    background:#16a34a;
+}
+
+.active-card .card-icon{
+    background:#f59e0b;
+}
+
+.card-info h3{
+    margin:0;
+    color:#666;
+    font-size:16px;
+}
+
+.card-info p{
+    margin-top:8px;
+    font-size:34px;
+    font-weight:bold;
+    color:#222;
+}
+
+
+
+.dashboard-tables{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:30px;
+}
+
+.dashboard-box{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.dashboard-box h2{
+    margin-bottom:15px;
+}
+
+@media(max-width:900px){
+
+.dashboard-tables{
+
+grid-template-columns:1fr;
+
+}
+
+}
