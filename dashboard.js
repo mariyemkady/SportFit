@@ -1,5 +1,5 @@
-import { getAllUsers } from "../services/usersService.js";
-import { getAllPrograms } from "../services/programsService.js";
+import { getAllUsers } from "usersService.js";
+import { getAllPrograms } from "programsService.js";
 
 export function DashboardPage() {
 
